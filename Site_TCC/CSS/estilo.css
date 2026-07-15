@@ -1,0 +1,194 @@
+/*fonte da letra do título*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Isso é padrão pra colocar no CSS */
+*{
+    box-sizing: border-box;
+}
+
+ body{
+    margin: 0;
+
+ }
+
+ /*barra de navegação e logo*/
+ .navbar{
+    display: flex;
+    flex-flow:row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .logo{
+
+    flex: 20%;
+    border: 1px solid red;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    margin-left: 20%;
+ }
+
+
+ 
+ .menu{
+    flex: 60%;
+    border: 1px solid green;
+    text-align: right;
+    padding: 20px;
+ }
+
+
+ /*Editando os links*/
+ .menu a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+ }
+
+ /*Quando o mouse estiver em cima*/
+ .menu a:hover{
+    color:black;
+    border-top: 4px solid darkblue;
+ }
+
+ /* Design do botao fale conosco*/
+ #botao{
+    background: darkblue;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover{
+    border: none;
+    background: yellow;
+}
+
+.header{
+    height: 600px;
+    background: purple;
+    display: flex;
+    flex-flow: row wrap;
+    background: gray;
+}
+
+.headline{
+   flex: 40%;
+   margin-left: 10%;
+   border: 1px solid black;
+   justify-content: center;
+   align-content: center;
+   background: red;
+}
+
+.headline h2{
+   font-weight: 900;
+   font-size: 20px;
+   color: #180f4a;
+   padding: 0;
+   margin: 0;
+     
+}
+
+.img-headline{
+   margin-right: 10%;
+   flex: 40%;
+   border: 1px solid red;
+   text-align: center;
+   align-content: center;
+   background: blue;
+}
+
+.headline p{
+   color: pink;
+   text-align: center;
+
+
+}
+
+
+/*Personalizando o botao "Contrate Agora*/
+.botao-contrate{
+   display: inline-block;
+   background: green;
+   padding: 20px;
+   color: white;
+   text-transform: uppercase;
+   border-radius: 5px;
+   text-decoration: none;
+
+}
+
+.botao-contrate:hover{
+   background: pink;
+   color: black;
+   border: 1px solid blue;
+}
+
+section{
+   display: inline-block;
+   margin-top: 80p;
+   border: 1px solid black;
+   margin-left: 5%;
+   margin-right: 5%;
+   padding: 5%;
+   width: 90%;
+}
+
+section h2{
+   width: 100%;
+   font-size: 50px;
+   margin: 0;
+   font-family: "Lobster", sans-serif;
+   color: purple;
+   text-align: center;
+
+}
+
+.serviços{
+   display: inline-block;
+   margin-top: 5%;
+   text-align: center;
+}
+
+.card-text{
+   display: inline-block;
+   width: 30%;
+   margin: 1%;
+   padding: 20px;
+   border: 1px solid black;
+   border-radius: 10px;
+   /*seta do cursor fica ativada quando estiver em cima*/
+   cursor: pointer;
+}
+.texto-oculto{
+   display: none;
+}
+
+.card-text:hover{
+   background: pink;
+   color: white;
+   padding: 40px;
+}
+
+.card-text:hover img{
+   display: none;
+
+}
+
+.card:hover .card-text{
+   display: none;
+}
+/*Rodapé*/
+footer{
+   margin-top: 100px;
+   height: 300px;
+   background-image:linear-gradient(180deg, purple, blue, black);
+}
+/*56 minutos*/
