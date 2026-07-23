@@ -1,0 +1,19 @@
+/* Isso é padrão pra colocar no CSS */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+ }
+
+ .navegar{
+    display: flex;
+    flex-flow:row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+ }
+
+

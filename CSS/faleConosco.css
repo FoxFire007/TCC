@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mr+Dafoe&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mr+Dafoe&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Isso é padrão pra colocar no CSS */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+ }
+
+ /*barra de navegação e logo*/
+ .navbar{
+    display: flex;
+    flex-flow:row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+   /*border-bottom: 2px solid blue;*/
+ }
+
+ .logo{
+    flex: 20%;
+    /*border: 1px solid red;*/
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    margin-left: 20%;
+ }
+  .menu{
+    flex: 60%;
+    /*border: 1px solid green;*/
+    text-align: right;
+    padding: 20px;
+ }
+
+
+ /*Editando os links*/
+ .menu a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px 16px;
+ }
+
+ /*Quando o mouse estiver em cima*/
+ .menu a:hover{
+    color:black;
+    border-top: 4px solid darkblue;
+ }
+
+ .fundo{
+    display: flex;
+    height: 400px;
+    /*background: blue;*/
+   background:linear-gradient(180deg, rgb(0, 96, 255), rgb(96, 0, 128));
+ }
+
+ .texto{
+    flex: 40%;
+    color: white;
+    /*background: purple;*/
+    margin-left: 10%;
+    text-align: center;
+    align-content: center;
+ }
+
+.imagem{
+   background:linear-gradient(180deg, rgb(0, 96, 255), rgb(96, 0, 128));
+}
+
+.separador h2{ 
+   color: purple;
+   font-family: "Lobster", sans-serif;
+   text-align: center;
+   font-size: 70px;
+}
+
+ .texto h1{
+    font-family: "Lobster", sans-serif;
+    text-transform: uppercase;
+ }
+
+.textoDois{
+    flex: 40%;
+    color: white;
+    /*background: purple;*/
+    margin-right: 10%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+ .textoDois h1{
+    font-family: "Lobster", sans-serif;
+    text-transform: uppercase;
+}
+
+.textoDois{
+    flex: 40%;
+    /*background: white*/
+    margin-right: 10%;
+
+ }
+
+.canais{
+    display: flex;
+    flex-flow:row wrap;
+    height: 150px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+   /*border: 2px solid blue;*/
+}
+
+.canal{
+   flex: 33%;
+   justify-content: center;
+}
+
+
+.canalDois{
+   flex: 33%;
+   justify-content: center;
+}
+
+.canalTres{
+   flex: 33%;
+   justify-content: center;
+}
+
+footer{
+   height: 200px;
+   background:linear-gradient(180deg, rgb(0, 96, 255), rgb(96, 0, 128));
+}
