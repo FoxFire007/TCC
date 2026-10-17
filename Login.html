@@ -42,12 +42,15 @@
             <h2>Acesse sua conta</h2>
             <br>
             
-            <form action="MySql/cadastro.php" method="POST">
+            <form action="PHP/verificar.php" method="POST">
 
                 <div style="margin-bottom: 15px;">
                   <p style="margin: 5px 0; font-weight: bold;">RM:</p>
-              <input type="text" id="RM" name="RM" placeholder="Digite seu RM" maxlength="5" inputmode="numeric" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required style="width: 350px; padding: 15px; border-radius: 16px; border: none;">
+    
+              <input type="text" id="RM" name="rm" placeholder="Digite seu RM" maxlength="5" inputmode="numeric" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required style="width: 350px; padding: 15px; border-radius: 16px; border: none;">
                 </div>
+
+
 
                 <div style="margin-bottom: 15px;">
                     <p style="margin: 5px 0; font-weight: bold;">Nome:</p>
