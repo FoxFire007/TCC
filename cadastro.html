@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Exemplo-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de como aprender a uar as Interligência Artificias Generativas">
+    <meta name="keywords" content="InteligenciArtificial, aprender, usar, responsabilidade, tecnologia, Tcc">
+    
+    
+    <!--Isso serve para usar os arquivos de Css-->
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+
+    <!--Aparencia da Logo "Educ.Ia">
+    <!-Barra de navegação-->
+    <nav class="navbar">
+        <div class="logo">
+
+            <!--Lembrete: lembrar de roubar o projeto-->
+            <!--Imagem do Pokemon-->
+            <a href="index.html">
+            <img style="max-width: 25%; margin-left: -900px;" src="img/arceusBranco.png">
+        </a>
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Voltar</a>
+            <a href="SobreNos.html">Sobre Nós</a>
+            <a href="#">Serviços</a> <!--Botao Login-->
+            <a id="botao" href="FaleConosco.html">Fale Conosco</a>
+        </div>        
+    </nav>
+
+    <!-- Usando header para manter o fundo roxo/azul e centralizando o conteúdo -->
+    <header class="header">
+        <!-- headline para manter a formatação de texto e cor -->
+        <div class="headline" style="margin: 0; text-align: center;">
+            <h2>Registre um Usuário</h2>
+            <br>
+            
+          <form action="PHP/cadastrar_aluno.php" method="POST">
+
+    <div style="margin-bottom: 15px;">
+        <p style="margin: 5px 0; font-weight: bold;">RM:</p>
+
+        
+        <input
+            type="text"
+            id="RM"
+            name="rm"
+            placeholder="Digite seu RM"
+            maxlength="5"
+            pattern="[0-9]{5}"
+            inputmode="numeric"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            required
+            style="width: 350px; padding: 15px; border-radius: 16px; border: none;"
+        >
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <p style="margin: 5px 0; font-weight: bold;">Nome:</p>
+
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            maxlength="100"
+            required
+            style="width: 350px; padding: 15px; border-radius: 16px; border: none;"
+        >
+    </div>
+
+    <br>
+
+    <button
+        type="submit"
+        class="Login"
+        style="border: none; border-radius: 16px; cursor: pointer; width: 350px;"
+    >
+        Cadastrar aluno
+    </button>
+
+</form>
+        </div>
+    </header>
+
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <center>
+            <h2 class="direitos">Copyright © 2026 Edu.IA.</h2>
+            <h3 class="direitos">Todos os direitos reservados.</h3>
+        </center>
+     </footer>
+    
+    </body>
