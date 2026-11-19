@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mr+Dafoe&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+}
+
+.cor h1{
+    padding: 25px;
+    background:linear-gradient(180deg, rgb(0, 96, 255), rgb(96, 0, 128));
+    padding-top: 10px;
+}
+
+.inicio{
+
+    height: 190px;
+    background: white;
+    color: white;
+    font-family: "Lobster", sans-serif;
+
+}
+
+.navegação{
+    flex: 60%;
+    /*border: 1px solid green;*/
+    text-align: right;
+    padding: 20px;
+}
+
+
+ /*Editando os links*/
+.navegação a {
+    color:rgb(3, 3, 128);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px 16px;
+}
+
+.navegação a:hover{
+    border-bottom: 2px solid blue;
+}
+
+ #botao{
+    background: darkblue;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 16px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#botao:hover{
+    border: none;
+    background: orange;
+}
+
+.divisao{
+    height: 70px;
+    font-size: 24px;
+    background: rgb(201, 193, 193);
+    padding: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+.titulo{
+
+    background:linear-gradient(180deg, rgb(4, 2, 122), rgb(102, 0, 128));height: 1000px;
+    color: aqua;
+    border: 1px solid black;
+
+}
+
+ .titulo h1{
+    font-size: 80px;
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    padding: 40px;
+}
+
+/* Container que organiza os cards */
+.container-cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar a linha se faltar espaço */
+    gap: 20px;       /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os cards na tela */
+}
+
+/* Estilo individual de cada card */
+.card {
+    background-color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #420588;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #390366;
+}
+
+.card a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.rodape{
+    background: gray;
+    height: 100px;
+    padding-left: 100%;
+    padding-left: 100%;
+}
+
+
+/* CONTAINER DOS GRUPOS */
+/* CONTAINER DOS GRUPOS */
+.grupos-container {
+    width: 100%;
+    max-width: 1200px; /* Alinha a largura máxima com o cabeçalho superior */
+    margin: 0 auto;    /* Centraliza o container na página */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* DIVS MAIORES (CABEÇALHO DO GRUPO) */
+.grupo-titulo {
+    width: 100%;
+    padding: 25px;
+    background-color: #290b6e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grupo-titulo h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.grupo-titulo:hover {
+    background-color: #49086e;
+}
+
+.seta {
+    font-size: 18px;
+}
+
+/* DIVS MENORES (GRID DOS CARDS) */
+.grupo-conteudo {
+    display: none;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanhos iguais */
+    gap: 20px;                             /* Espaçamento interno entre os cards */
+    width: 100%;
+    margin-top: 15px;
+}
+
+.grupo-conteudo.ativo {
+    display: grid;
+}
+
+/* CARTÕES */
+.card {
+    background-color: white;
+    width: 100%; /* Faz o card esticar até preencher toda a sua coluna no grid */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: inline-block;
+    align-self: flex-start; /* Mantém o botão alinhado à esquerda sem esticar na largura toda */
+    padding: 10px 20px;
+    background-color: #451e5f;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #24045f;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .grupo-conteudo {
+        grid-template-columns: 1fr; /* Em telas menores, vira 1 coluna */
+    }
+
+    .grupo-titulo h2 {
+        font-size: 17px;
+    }
+}
+
+footer{
+   color: white; 
+   height: 200px;
+   background:linear-gradient(180deg, rgb(0, 96, 255), rgb(96, 0, 128));
+}
